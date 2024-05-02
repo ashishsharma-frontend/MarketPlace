@@ -1,0 +1,418 @@
+/* Reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Anton&family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --white-color: #f9fbfc;
+  --text-color: #1a1a1a;
+  --primary-color: #f6fcff;
+  --secondary-color: #8b93ff;
+  --accent-color: #c9cbff;
+  --gradient-background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  --squada-one-font: "Alatsi", sans-serif;
+}
+
+.main-content {
+  background-color: var(--primary-color);
+}
+
+.market-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.market-tab {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.market-tab .tab {
+  font-size: 1.5rem;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.market-tab .tab:hover {
+      color: #05314C;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 20px;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+ .logo img{
+  width: 80px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+header .navbar a:hover {
+  color: var(--color-another);
+}
+
+header .nav-icon {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icon i {
+  cursor: pointer;
+  background-color: #F2EFE5;
+  padding: 15px;
+  border-radius: 50%;
+  transition:  all ease 500ms;
+}
+
+.nav-icon i:hover {
+  background-color: #E3E1D9; 
+}
+
+/* Menu Styles */
+#menu {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* running text */
+#running-text {
+  display: inline-block;
+  animation-name: running-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.home-pages {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-page {
+  max-width: 100%;
+  width: 100%;
+  height: 650px;
+  background-position: center;
+}
+
+.home-page img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.category-section {
+  width: 100%;
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between categories */
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.category {
+  text-align: center;
+  max-width: 200px; /* Adjust width as needed */
+}
+
+.category-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 120px; /* Adjust max-width for image */
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #0A4174;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid var(--text-color);
+}
+
+.category img {
+  width: 80%;
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 10px; /* Adjust spacing between image and text */
+}
+
+
+@media (max-width : 1000px) {
+  .home-page img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.about-market {
+  margin: 2rem 0;
+  padding: 10px;
+}
+
+.about-market-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-market-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.about-market-card-right,
+.about-market-card-left {
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+.about-market-card-right img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.about-market-card-left {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-market-card-left .first-card,
+.about-market-card-left .second-card {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-market-card-left .first-card img,
+.about-market-card-left .second-card img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bottom,
+.bottom-two {
+  max-width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.bottom img,
+.bottom-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
+  background-position: center;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  border-width: 0 10% 0 10%;
+  border-image: linear-gradient(to right, transparent, black, transparent) 1 1;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 12px;
+  background-color: #D9FFFF;
+  justify-content: space-between;
+}
+
+.footer-right .footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.footer-center,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.60rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 280px;
+  width: 100%;
+}
+
+.footer-address,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.50rem;
+}
+
+@media (max-width: 1130px) {
+  /* Display the menu */
+  #menu {
+    display: initial;
+  }
+
+  /* Styling for the navbar */
+  header .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    padding: 2rem 0;
+    background-color: var(--primary-color);
+  }
+
+  /* Styling for the active navbar */
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Styling for navbar links */
+  header .navbar a {
+    font-size: 1.3rem;
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-page {
+    height: min-content;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-market-card {
+    flex-direction: column;
+  }
+
+  .about-market-card-right,
+  .about-market-card-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+  .about-market-card {
+    flex-direction: column;
+  }
+
+  .about-market-card-right,
+  .about-market-card-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
